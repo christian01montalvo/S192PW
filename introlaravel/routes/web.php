@@ -1,6 +1,8 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 
-route::view('/','welcome');
-route::view('/form','formulario');
+route::view('/', 'inicio') -> name('inicio');
+route::view('/form', 'formulario')-> name('formulario');
+route::view('/client', 'cliente') -> name('cliente');
