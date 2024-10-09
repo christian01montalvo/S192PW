@@ -19,6 +19,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('formulario') }}">Registro Clientes</a>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('cliente') }}">Consulta Clientes</a>
                     </li>

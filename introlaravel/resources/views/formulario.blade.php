@@ -1,7 +1,7 @@
 @extends('layouts.plantilla')
+@section('titulo', 'cformulario')
 @section('contenido')
-
-    {{-- Inicia Tarjeta con formulario --}}
+{{-- Inicia Tarjeta con formulario --}}
     <div class="container mt-5 col-md-6">
         <div class="card font-monospace">
             <div class="card-header fs-5 text-center text-primary">
@@ -35,4 +35,6 @@
         </div>
     </div>
     {{-- Finaliza Tarjeta con formulario --}}
+   
+   
     @endsection
