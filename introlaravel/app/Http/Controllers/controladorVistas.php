@@ -20,13 +20,22 @@ class controladorVistas extends Controller
     }
     public function procesarCliente(Request $peticion){
         //devuelve todo lo que contine la peticion
-        return $peticion-> all();
+        //return $peticion-> all();
         //laruta de donde se hizo la
         //return $peticion-> path();
         //nos devuelve la url completa de dode se hizo la peticion
         //return $peticion-> url();
         //nos devolvera la ip del lugar donde se hizo la peticion
         //return $peticion-> ip();
+        //respuestas 
+        //return redirect()->route('cliente');
+        //return back();
+
+
+        //redireccion con valores de session 
+        $usuario= $peticion->input('txtnombre');
+        session()->flash('exito','se guardo el usuario ' .$usuario);
+        return to_route('formulario');
 
 
     }
