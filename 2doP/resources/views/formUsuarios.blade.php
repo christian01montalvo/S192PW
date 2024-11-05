@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    @vite(['resources/app.js'])
+    @vite(['resources/js/app.js'])
 </head>
 <body>
 
@@ -17,17 +17,17 @@
 
         <div class="mb-3">
             <label  class="form-label">Correo: </label>
-            <input type="text" class="form-control" >
+            <input type="text" class="form-control" id="correo">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Contraseña: </label>
-            <input type="text" class="form-control" >
+            <input type="text"class="form-control" id="contraseña">
         </div>                
 
         <div class="mb-3">
             <label  class="form-label">Edad: </label>
-            <input type="text" class="form-control"  >
+            <input type="text" class="form-control" id="edad">
         </div>
 
 
@@ -38,5 +38,6 @@
 </div>
 
 
+@yield('contenido')
 </body>
 </html>
