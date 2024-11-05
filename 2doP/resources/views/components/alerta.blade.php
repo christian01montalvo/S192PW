@@ -1,3 +1,5 @@
-<div>
-    <!-- Because you are alive, everything is possible. - Thich Nhat Hanh -->
+<div class="container mt-4">
+<div class="alert alert-{{$tipo}}" role="alert">
+alerta {{$slot}}
+</div>
 </div>
