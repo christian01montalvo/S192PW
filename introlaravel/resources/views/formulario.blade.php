@@ -46,7 +46,8 @@
                         <small class="fst-italic text-danger">{{$errors->first('txtcorreo')}}</small>
                     </div>
                     <div class="mb-3">
-                        <label for="telefono" class="form-label">{{__('Teléfono')}}</label>
+                        <label for="telefono" class="form-label">{{__('
+                            ')}}</label>
                         <input type="text" class="form-control" name="txttelefono"  value="{{old('txttelefono')}}">
                         <small class="fst-italic text-danger">{{$errors->first('txttelefono')}}</small>
                     </div>
